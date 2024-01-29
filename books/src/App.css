@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  font-family: 'Rubik';
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(21, 18, 18);
+  color: red;
+  width: 100vw;
+  height: 5vw;
+  margin-top: -0.5vw;
+}
+
+#register{
+  margin-right: 2vw;
+  height: 2vw; 
+  background-color: blueviolet;
+  color: rgb(255, 255, 255);
+}
+input{
+  height: 2vw;
+}
+
+#title{
+  margin-left: 2vw;
+}
+img{
+  width: 20vw;
+  height: 30vw;
+}
+.books{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6vw;
+  row-gap: 4vw;
+  flex-wrap: wrap;
+  margin-left: 4vw;
+  text-align: center;
+  margin-top: 4vw;
+}
+
+.onebook{
+  
+  background-color: rgb(225, 184, 184);
+  margin-top: 2vw;
+  width: 20vw;
+  height: 43vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+
+.onebook:hover{
+  box-shadow: 5px 5px 12px black;
+  cursor: pointer;
+}
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
