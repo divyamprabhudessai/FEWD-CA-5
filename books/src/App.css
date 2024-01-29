@@ -53,13 +53,14 @@ img{
 
 .onebook{
   
-  background-color: rgb(225, 184, 184);
+  background-color: rgb(211, 211, 211);
   margin-top: 2vw;
   width: 20vw;
   height: 43vw;
   display: flex;
   flex-direction: column;
   align-items:center;
+  border: 3px solid black;
 
 }
 
@@ -68,6 +69,33 @@ img{
   cursor: pointer;
 }
 
+.App{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+}
+
+input{
+  width: 22vw;
+  height: 3vw;
+  color: black;
+  background-color: white;
+}
+
+#submit{
+  width: 22.5vw;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+form{
+  margin-top: 6vw;
+
+}
 
 /* #root {
   max-width: 1280px;
