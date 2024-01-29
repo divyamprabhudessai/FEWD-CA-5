@@ -2,6 +2,8 @@ import { useState } from 'react'
 import "../App.css"
 import { Link } from 'react-router-dom'
 function Form() {
+
+    
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
@@ -9,6 +11,8 @@ function Form() {
     password: '',
     RepeatYourPassword:'',
   })
+
+
   const [alerts, setAlerts] = useState({
     firstName: '',
     email: '',
@@ -104,6 +108,8 @@ function Form() {
     if(
       newAlerts.firstName === ''  && newAlerts.phoneNumber ==='' && newAlerts.email==='' && newAlerts.password==='' && newAlerts.RepeatYourPassword ===''
     ){
+      localStorage.setItem('formData', JSON.stringify(formData));
+      sessionStorage.setItem('formData',JSON.stringify(formData))
       setRegistrationSuccess(true)
       
     }
@@ -111,7 +117,8 @@ function Form() {
   }
   return (
     <>
-      <div className="App">
+    <h1 className='formTitle'>Sign-up</h1>
+      <div className="form">
         {registrationSuccess && (
           <div style={{backgroundColor: 'blue', color:'white',padding:'10px',marginTop:'10px',borderRadius:'8px',textAlign:'center'}}>
             Registration Successfull !
@@ -150,9 +157,9 @@ function Form() {
           <br />
           {/* submit button  */}
           
-         <Link to="/">
-        <button id='submit' type='submit' style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>Register</button>
-        </Link>
+     
+        <button id='submit' type='submit' style={{   padding: '10px', border: 'none', cursor: 'pointer' }}>Sign up</button>
+       
         
           
         

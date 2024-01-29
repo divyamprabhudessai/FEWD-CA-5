@@ -46,16 +46,19 @@ function Homepage() {
         {filteredBooks.map((book) => (
           <div key={book.id} className='onebook'>
             <img src={book.imageLinks.smallThumbnail} alt="" />
-            <h3>{book.title}</h3>
-            <p>{book.authors.map((authors)=> <div>{authors}</div>)}</p>
+            <h3 className='booktit'>{book.title}</h3>
+            {/* <p>{book.authors.map((authors)=> <div>{authors}</div>)}</p> */}
+            <div className='bottom'>
+            <p>{book.averageRating || 4}⭐</p>
             <p>Free</p>
+            </div>
           </div>
         ))}
       </div>
 
      
     </>
-  );
+  );    
 }
 
 export default Homepage;

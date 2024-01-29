@@ -8,6 +8,7 @@ body{
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  background-image: url("./assets/back.jpg");
 }
 
 nav{
@@ -22,11 +23,19 @@ nav{
 }
 
 #register{
+  font-size: 1vw;
   margin-right: 2vw;
-  height: 2vw; 
+  height: 3vw; 
   background-color: blueviolet;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
+
+#register:hover{
+  background-color: rgb(157, 255, 0);
+  color: black;
+}
+
 input{
   height: 2vw;
 }
@@ -36,7 +45,7 @@ input{
 }
 img{
   width: 20vw;
-  height: 30vw;
+  height: 20vw;
 }
 .books{
   display: flex;
@@ -56,17 +65,21 @@ img{
   background-color: rgb(211, 211, 211);
   margin-top: 2vw;
   width: 20vw;
-  height: 43vw;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items:center;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 
 }
 
 .onebook:hover{
-  box-shadow: 5px 5px 12px black;
+  box-shadow: 5px 5px 12px rgb(128, 128, 128);
   cursor: pointer;
+}
+
+.booktit{
+  font-size: 1vw;
 }
 
 .App{
@@ -84,6 +97,15 @@ input{
 
 #submit{
   width: 22.5vw;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2vw;
+}
+
+#submit:hover{
+  background-color: rgb(157, 255, 0);
+  color: black;
+  box-shadow: 2px 2px 3px black;
 }
 
 a {
@@ -93,8 +115,32 @@ a {
 }
 
 form{
-  margin-top: 6vw;
+  margin-top: 2vw;
+  padding: 8px;
 
+}
+.form{
+  background-color: rgb(108, 107, 105);
+  width: 40vw;
+  height:fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 5vw;
+  box-shadow: 8px 6px 14px rgb(162, 162, 162);
+}
+
+.formTitle{
+  text-align: center;
+  color: whitesmoke;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 13vw;
+  font-weight: 300;
 }
 
 /* #root {
