@@ -7,4 +7,4 @@
 * React js
 * Vanilla css
 
-**Any feedback would be much appreciated. Happy reading!!**
+**I would greatly appreciate any feedback you might have. Happy reading!!**
