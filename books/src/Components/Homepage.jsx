@@ -58,7 +58,9 @@ function Homepage() {
         ))}
       </div>
 
-     
+     <div className='extraArea'>
+        
+     </div>
     </>
   );    
 }
