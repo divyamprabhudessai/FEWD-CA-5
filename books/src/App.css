@@ -9,6 +9,7 @@ body{
   justify-content: center;
   overflow-x: hidden;
   background-image: url("./assets/back.jpg");
+  height: 100vh;
 }
 
 nav{
@@ -32,8 +33,12 @@ nav{
 }
 
 #register:hover{
-  background-color: rgb(157, 255, 0);
-  color: black;
+  background-color: chocolate;
+
+}
+
+.formInput{
+  font-size: 1vw;
 }
 
 input{
@@ -62,24 +67,26 @@ img{
 
 .onebook{
   
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(85, 81, 81);
   margin-top: 2vw;
   width: 20vw;
   height: max-content;
   display: flex;
   flex-direction: column;
   align-items:center;
+  color: white;
+  box-shadow: 10px 10px 8px black;
   /* border: 3px solid black; */
 
 }
 
 .onebook:hover{
-  box-shadow: 5px 5px 12px rgb(128, 128, 128);
+  box-shadow: 8px 8px 12px rgb(128, 128, 128);
   cursor: pointer;
 }
 
 .booktit{
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .App{
@@ -99,11 +106,15 @@ input{
   width: 22.5vw;
   background-color: blueviolet;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
+}
+.alert{
+  font-size: 1vw;
+  color: rgb(141, 5, 5);
 }
 
 #submit:hover{
-  background-color: rgb(157, 255, 0);
+  background-color: chocolate;
   color: black;
   box-shadow: 2px 2px 3px black;
 }
@@ -128,8 +139,10 @@ form{
   align-items: center;
   border: 2px solid black;
   margin-top: 5vw;
-  box-shadow: 8px 6px 14px rgb(162, 162, 162);
+  box-shadow: 8px 8px 14px rgb(0, 0, 0);
 }
+
+
 
 .formTitle{
   text-align: center;
@@ -141,47 +154,128 @@ form{
   flex-direction: row;
   column-gap: 13vw;
   font-weight: 300;
+  font-size: 1vw;
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.success{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(119, 255, 0);
+  height: 20vw;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#back{
+  height: 3vw;
+  font-size: 1.3vw;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+#back:hover{
+  background-color: chocolate;
+  box-shadow: 3px 3px 9px black;
+}
+
+#successNote{
+  text-shadow: 3px 3px 6px black;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+ .books{
+  flex-direction: column;
+ }
+
+  .onebook {
+    height: auto;
+    width: 60vw;
   }
-  to {
-    transform: rotate(360deg);
+ 
+
+  #title{
+    font-size: 15px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  nav{
+    height: 12vw;
+    margin-top: -3vw;
+    
   }
-}
 
-.card {
-  padding: 2em;
-}
+  #register{
+    margin-top: -4vw;
+    height: 3vw;
+  }
 
-.read-the-docs {
-  color: #888;
-} */
+  .booktit{
+    font-size: 4.5vw;
+    font-weight: bolder;
+  }
+  .bottom{
+    font-size: 3.5vw;
+    font-weight: 500;
+  }
+
+  .form{
+    font-size: 4vw;
+    width: 70vw;
+    margin-top: 10vw;
+  }
+
+  .alert{
+    font-size: 2vw;
+  }
+  
+  .success{
+    font-size: 1.82vw;
+    height: 30vw;
+    width: 50vw;
+    text-align: center;
+    
+  }
+
+  #back{
+    margin-top: 2vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+
+  .searchbar{
+    width: 30vw;
+    height: 3.9vw;
+  }
+  img{
+    /* margin-top: 4vw; */
+    width: 60vw;
+    height: 70vw;
+  }
+  .formInput{
+    font-size: 3vw;
+    width: 50vw;
+  }
+  #submit{
+    font-size: 3vw;
+    width: 51vw;
+    height: 8vw;
+    border: 2px solid black;
+  }
+
+  #register{
+    height: 6vw;
+    font-size: 2.6vw;
+  }
+
+  #successNote{
+    text-shadow: 3px 3px 6px black;
+  }
+  input{
+    width: 35vw;
+    height: 6vw;
+  }
+  
+}

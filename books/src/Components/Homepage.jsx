@@ -38,6 +38,7 @@ function Homepage() {
           type="search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          className='searchba'
         />
         <Link to= "/form"><button id='register' >Register</button></Link>
         
